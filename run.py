@@ -143,7 +143,7 @@ def Public():
 			find_token = re.search("(EAAG\w+)", data.text)
 			ken=open(".token.txt", "w").write(find_token.group(1))
 			print (" [] Login Successful")
-			login()
+			public_menu()
 		except Exception as e: 
 			os.system("rm -f .token.txt")
 			print( ' [×] Login Failed ')
