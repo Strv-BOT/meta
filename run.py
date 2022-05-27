@@ -411,12 +411,12 @@ class Main:
 		self.loop = 0
 		os.system("clear")
 		print(logo)
-		print("\n [1] File Cloning")
-		print(" [2] Public Cloning\33[31m(OFF)")
-		print(" [3] Create File")
-		print(" [4] 2009-10 Cloning")
-		print(" [5] 2011-14 Cloning")
-		print(" [E] Exit Programming\n")
+		print("\033[32m [1] File Cloning")
+		print("\33[31m [2] Public Cloning(OFF)")
+		print("\033[32m [3] Create File")
+		print("\033[32m [4] 2009-10 Cloning")
+		print("\033[32m [5] 2011-14 Cloning")
+		print("\33[31m [E] Exit Programming")
 		UZAIR =input(" Choose : ")
 		if UZAIR in ["1", "01"]:
 			File()
