@@ -94,8 +94,22 @@ except:
 	kok=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'w')
 	kok.write(myid+imt)
 	kok.close()
-
-############
+def login():
+	try:
+		token = open('.token.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+			public_menu()
+		except KeyError:
+			Public()
+		except requests.exceptions.ConnectionError:
+			clear()
+			print(logo)
+			print ( ' [×] Connection Timeout')
+			exit()
+	except IOError:
+		Public()
 def jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
@@ -105,21 +119,22 @@ def jalan(z):
 def Public():
 	clear()
 	print(logo)
-	print  (' [01] Login With Cookie V1\n [02] Login With Cookie V2')
+	print  (' [01] Login With Token\n [02] Login With Cookie')
 	pil=input('\n [#] Select One : ')
 	if pil in ['1','01']:
-	try:
-			cookie=input(" [+] Cookie : ")
-			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 12.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
-			find_token = re.search("(EAAG\w+)", data.text)
-			ken=open(".token.txt", "w").write(find_token.group(1))
+		panda = input(' [+] Token : ')
+		akun=open('.token.txt','r').write(panda)
+		try:
+			tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
+			tes3 = json.loads(tes.text)['id']
 			print (" [] Login Successful")
-			public_menu()
-		except Exception as e: 
-			os.system("rm -f .token.txt")
+			login()
+		except KeyError:
 			print( ' [×] Login Failed ')
 			time.sleep(2.5)
-			login()
+			Public()
+		except requests.exceptions.ConnectionError:
+			print ( ' [×] Connection Timeout')
 			exit()
 	elif pil in ['2','02']:
 		try:
@@ -137,7 +152,7 @@ def Public():
 			exit()
 def public_menu():
 	try:
-		token = open('.token.txt','r').read()
+		token = open(".token.txt","w").read()
 	except IOError:
 		exit()
 	clear()
