@@ -412,10 +412,10 @@ class Main:
 		os.system("clear")
 		print(logo)
 		print("\033[32m [1] File Cloning")
-		print("\33[31m [2] Public Cloning(OFF)")
+		print("\033[32m [2] Crack publik\33[31m(OFF)")
 		print("\033[32m [3] Create File")
-		print("\033[32m [4] 2009-10 Cloning")
-		print("\033[32m [5] 2011-14 Cloning")
+		print("\033[32m [4] Clone Akun 2009-10")
+		print("\033[32m [5] Clone Akun 2011-14")
 		print("\33[31m [E] Exit Programming")
 		UZAIR =input(" Choose : ")
 		if UZAIR in ["1", "01"]:
