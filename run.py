@@ -865,7 +865,7 @@ class Main:
 	def old2(self):
 		x = 1111111111
 		xx = 9999999999
-		idx = "10000" 
+		idx = random.choice(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
 		os.system('clear');print(logo)
 		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
