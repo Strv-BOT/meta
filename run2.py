@@ -26,7 +26,7 @@ except ImportError:
 import os
 import sys
 import time
-import requests
+import Request
 import random
 import platform
 import base64
@@ -112,11 +112,11 @@ class Main:
 \033[1;91m [\033[1;94m✓\033[1;91m] \033[1;92mWARNING  : Fuck My All Haters
 \033[1;90m══════════════════════════════════════════════════
     """)
-		print("%s [%s•%s] %sTOOL NAME : %sSuper Speed Uid Cloning"%(G,R,G,B,G))
-		print("%s [%s•%s] %sVERSION   : %s2.0"%(G,R,G,B,G))
-		print("%s [%s•%s] %sYOUR KEY  : %s%s"%(G,R,G,B,G,key))
-		print("%s [%s•%s] %sSTATUS    : %s"%(G,R,G,B,stat)) 
-		print("")
+		
+		
+		
+		
+		
 		print("%s [%s01%s]%s CRACK RANDOM FB ID 2009-11 %s(PRO) V1[High Speed]"%(R,G,R,Y,G))
 		print("%s [%s02%s]%s CRACK RANDOM FB ID 2005-8 %s (PRO) V2[High Speed]"%(R,G,R,Y,G))
 		print("%s [%s03%s]%s CRACK RANDOM FB ID 2004-5 %s (PRO) V3[Super Slow]"%(R,G,R,Y,G))
