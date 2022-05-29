@@ -80,23 +80,23 @@ class Main:
 		self.ok = []
 		self.cp = []
 		self.loop = 0
-		try:
-			plr = requests.get('https://raw.githubusercontent.com/Riyad-RR-Hacker/text/main/Dis').text
-			if basesplit in plr:
-				key = basesplit
-				stat = ("\033[0;92mPREMIUM")
-				FY = '\033[0;93m'
-				FG = '\033[0;92m'
-				GET = '\r'
-			else:
-				key = ("\033[0;91m -")
-				stat = ("\033[0;91mFREE USER")
-				FY = '\033[0;90m'
-				FG = '\033[0;90m'
-				GET = '\033[0;92m [P] GET PREMIUM'
-		except requests.exceptions.ConnectionError:
-			print("\n%s [!] NO INTERNET CONNECTION..\n"%(G))
-			exit()
+		
+			
+		
+				
+				
+				
+				
+			
+			
+				
+				
+				
+				
+				
+		
+			
+			
 		os.system("clear")
 		
 		print ("""\033[1;92m _______    _____ ____  ____    _      ______    
@@ -121,7 +121,7 @@ class Main:
 		print("%s [%s02%s]%s CRACK RANDOM FB ID 2005-8 %s (PRO) V2[High Speed]"%(R,G,R,Y,G))
 		print("%s [%s03%s]%s CRACK RANDOM FB ID 2004-5 %s (PRO) V3[Super Slow]"%(R,G,R,Y,G))
 		print("%s [%s04%s]%s CRACK FROM EMAILS %s(PRO) [Normal]"%(R,G,R,Y,G))
-		print(GET)
+		
 		hoga = input("\n%s [?] CHOICE : "%(B))
 		if hoga in ["", " "]:
 			Main()
