@@ -131,25 +131,25 @@ class Main:
 			
 				
 				
-		 if hoga in ["1", "01"]:
+		 if hoga in ['1', '01']:
 			
 			    self.fbtua()
 			
 				
 				
-		elif hoga in ["2", "02"]:
+		elif hoga in ['2', '02']:
 			
 			    self.fbtua()
 			
 				
 				
-		elif hoga in ["3", "03"]:
+		elif hoga in ['3', '03']:
 			
 				self.old4_5()
 			
 				
 				
-		elif hoga in ["4", "04"]:
+		elif hoga in ['4', '04']:
 			
 				self.email()
 			
