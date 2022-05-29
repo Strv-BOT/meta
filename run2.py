@@ -26,7 +26,7 @@ except ImportError:
 import os
 import sys
 import time
-import Requests
+import requests
 import random
 import platform
 import base64
