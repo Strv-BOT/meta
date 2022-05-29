@@ -123,42 +123,42 @@ class Main:
 		print("%s [%s04%s]%s CRACK FROM EMAILS %s(PRO) [Normal]"%(R,G,R,Y,G))
 		
 		hoga = input("\n%s [?] CHOICE : "%(B))
-		if hoga in ["", " "]:
-			Main()
-		elif hoga in ["", "0"]:
-			if hoga in r:
-				self.oldcrack()
-			else: 
-				notice()
-				exit()
-		elif hoga in ["1", "01"]:
-			if hoga in :
+		
+			
+		
+			
+				
+			
+				
+				
+		 if hoga in ["1", "01"]:
+			
 			    self.fbtua()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["2", "02"]:
-			if hoga in :
+			
 			    self.fbtua()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["3", "03"]:
-			if hoga in :
+			
 				self.old4_5()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["4", "04"]:
-			if hoga in :
+			
 				self.email()
 			else: 
 				notice()
 				exit()
-		elif hoga in ["P", "p"]:
-			notice()
-			exit()
-		else:
+		elif hoga in ["P", "p"
+			
+			
+		
 			Main()
 
 	def oldcrack(self):
