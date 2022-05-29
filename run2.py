@@ -155,7 +155,7 @@ class Main:
 			else: 
 				notice()
 				exit()
-		elif hoga in ["P", "p"
+		
 			
 			
 		
