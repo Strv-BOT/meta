@@ -126,31 +126,31 @@ class Main:
 		if hoga in ["", " "]:
 			Main()
 		elif hoga in ["", "0"]:
-			if teddy in r:
+			if hoga in r:
 				self.oldcrack()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["1", "01"]:
-			if teddy in :
+			if hoga in :
 			    self.fbtua()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["2", "02"]:
-			if teddy in :
+			if hoga in :
 			    self.fbtua()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["3", "03"]:
-			if basesplit in :
+			if hoga in :
 				self.old4_5()
 			else: 
 				notice()
 				exit()
 		elif hoga in ["4", "04"]:
-			if basesplit in :
+			if hoga in :
 				self.email()
 			else: 
 				notice()
