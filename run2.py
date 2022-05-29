@@ -159,7 +159,7 @@ class Main:
 			
 			
 		
-			Main(
+			
 
 	def oldcrack(self):
 		x = 11111111
