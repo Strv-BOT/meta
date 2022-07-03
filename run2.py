@@ -176,9 +176,9 @@ def logo():
 \33[37m ██████╔╝    ██║    ██║  ██║   ╚██╔╝
 \33[37m ╚═════╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝
 \33[31mGITHUB   : \33[1;31mPrivate  
-\x1b[1;92[FACEBOOK : \33[1;96mTeddy Cahyo Putra Pangembara           
-\x1b[0;33[WHATSAPP : \33[1;33m082290238779
-\x1b[0;33[SUPPORT  : \33[1;33mDevice 64 Bit     
+\33[1;96mFACEBOOK : \33[1;96mTeddy Cahyo Putra Pangembara           
+\33[1;96mWHATSAPP : \33[1;33m082290238779
+\x1b[0;33[SUPPORT  : \33[1;96mDevice 64 Bit     
 \x1b[0;33[SCRIP    : \33[1;96mHacking & Cracking 
 \x1b[0;33[VERSION  : \33[1;96mV.02 Beta.Test  """)
 
