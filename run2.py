@@ -158,7 +158,8 @@ def mentod():
 
 
 def loading():
-    jalan(f'sayang')
+    jalan(f'[{K}!{N}] Selamat Datang Di Tools Saya...')
+    jalan(f'-> Harap gunakan dengan bijak saya tidak akan bertanggung jawab\n Dengan apa yang akan terjadi kedepannya...')
     animation = ["[\x1b[1;91m■\x1b[0m□□□□□□□□□]","[\x1b[1;92m■■\x1b[0m□□□□□□□□]", "[\x1b[1;93m■■■\x1b[0m□□□□□□□]", "[\x1b[1;94m■■■■\x1b[0m□□□□□□]", "[\x1b[1;95m■■■■■\x1b[0m□□□□□]", "[\x1b[1;96m■■■■■■\x1b[0m□□□□]", "[\x1b[1;97m■■■■■■■\x1b[0m□□□]", "[\x1b[1;98m■■■■■■■■\x1b[0m□□]", "[\x1b[1;99m■■■■■■■■■\x1b[0m□]", "[\x1b[1;910m■■■■■■■■■■\x1b[0m]"]
     for i in range(50):
         time.sleep(0.1)
