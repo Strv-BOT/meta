@@ -163,9 +163,9 @@ def loading():
         time.sleep(0.1)
         sys.stdout.write(f"\r {N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
         sys.stdout.flush()
-   jalan(f"\n {N}[{H}•{N}] {N}Thanks You Jalankan Ulang '{H}python run.py{N}'")
-   jalan(f"\n {N}[{H}•{N}] {N}Thanks You Jalankan Ulang '{H}python run.py{N}'")
-# LOGO
+   jalan(f"Thanks You Jalankan Ulang ")
+   jalan(f"Thanks You Jalankan Ulang ")
+   # LOGO
 
 def logo():
     print(f"""    
