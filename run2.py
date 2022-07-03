@@ -253,6 +253,7 @@ def login():
 
 def yayanxd():
     os.system('clear')
+    loading()
     logo()
     try:
     	___kontol___ = input('[|] Masukkan Cookies : ')
