@@ -159,15 +159,15 @@ def mentod():
 
 def loading():
     jalan(f'[{K}•{N}] Selamat Datang Di Tools Saya...')
-    jalan(f'-> Harap gunakan dengan bijak saya tidak akan bertanggung jawab Dengan apa yang akan terjadi kedepannya...')
+    jalan(f'-> Tools ini dirancang untuk hacking account facebook menggunakan metode cracking, dimana ID akun akan di randomkan dengan password yang sudah di list pada program ini, Harap gunakan dengan bijak saya tidak akan bertanggung jawab Dengan apa yang akan terjadi kedepannya...')
     print(f" {BM}NOTICE INFO !{N}")
     print(f"[{K}1{N}] Silahkan Siapkan Akun Tumbal")
     print(f"[{K}2{N}] Tools Ini Login Mengunakan Cookies")
-    print(f"[{K}3{N}] Jika Sudah Ada Akun tumbal silakan masukan...")
+    print(f"[{K}3{N}] Ambil Cookie Dari Cookiedough")
     animation = ["[\x1b[1;91m■\x1b[0m□□□□□□□□□]","[\x1b[1;92m■■\x1b[0m□□□□□□□□]", "[\x1b[1;93m■■■\x1b[0m□□□□□□□]", "[\x1b[1;94m■■■■\x1b[0m□□□□□□]", "[\x1b[1;95m■■■■■\x1b[0m□□□□□]", "[\x1b[1;96m■■■■■■\x1b[0m□□□□]", "[\x1b[1;97m■■■■■■■\x1b[0m□□□]", "[\x1b[1;98m■■■■■■■■\x1b[0m□□]", "[\x1b[1;99m■■■■■■■■■\x1b[0m□]", "[\x1b[1;910m■■■■■■■■■■\x1b[0m]"]
     for i in range(50):
         time.sleep(0.1)
-        sys.stdout.write(f"\r {N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
+        sys.stdout.write(f"\r{N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
         sys.stdout.flush()
     print("")
 
