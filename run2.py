@@ -163,7 +163,8 @@ def loading():
         time.sleep(0.1)
         sys.stdout.write(f"\r {N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
         sys.stdout.flush()
-   jalan(f" {N}[{M}!{N}] Aktifkan Mode Pesawat 5 Detik");time.sleep(5)
+  print("t")
+  print("t")
 
 def logo():
     print(f"""    
