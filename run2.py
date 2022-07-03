@@ -163,7 +163,8 @@ def loading():
         time.sleep(0.1)
         sys.stdout.write(f"\r {N}[{H}•{N}] {H}Loading...{N} " + animation[i % len(animation)] +"\x1b[0m ")
         sys.stdout.flush()
-    print("")
+     jalan(' %s[%s✓%s] %sheloo%s'%(N,H,N,H,N))
+     jalan(' %s[%s✓%s] %sheloo%s'%(N,H,N,H,N))
 
 # LOGO
 
@@ -254,7 +255,6 @@ def login():
 def yayanxd():
     os.system('clear')
     loading()
-    logo()
     try:
     	___kontol___ = input('[|] Masukkan Cookies : ')
     	data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":___kontol___})
@@ -262,7 +262,7 @@ def yayanxd():
     	find_token = re.search("(EAAG\w+)", data.text)
     	ken=open(".token.txt", "w").write(find_token.group(1))
     	cok=open(".cokie.txt", "w").write(___kontol___)
-    	print('\n LOGIN SUCCESSFULLY')
+    	print('\n Login Berhasil Jalankan Ulang Python run.py')
     	exit()
     except Exception as e:
     	os.system("rm -f .token.txt")
