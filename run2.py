@@ -160,7 +160,7 @@ def mentod():
 def loading():
     jalan(f'[{K}•{N}] Selamat Datang Di Tools Saya...')
     jalan(f'-> Harap gunakan dengan bijak saya tidak akan bertanggung jawab Dengan apa yang akan terjadi kedepannya...')
-     jalan(f'[{K}!{N}] Perhatian !!!')
+     jalan(f'[{K}!{N}] Perhatian !')
       jalan(f'[{K}1{N}] Silahkan Siapkan Akun Tumbal')
        jalan(f'[{K}2{N}] Tools Ini Login Mengunakan Cookies')
         jalan(f'[{K}3{N}] Jika Sudah Ada Akun \ntumbal silakan masukan...')
